@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "responsive portfolio ",
   "main": "index.js",
-  "homepage": "https://marti2221.github.io/responsive_portfolio",
+  "homepage": "https://marti2221.github.io/modern_port",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
