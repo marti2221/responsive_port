@@ -151,14 +151,19 @@ main {
         flex-flow: wrap; 
         margin-top: 10px;
 
+        img {
+            max-width: 500px;
+        }
+        
         .item {
-            margin: 5px; 
+            margin: 10px;
         }
 
         .img-wrapper {
             flex: 1; 
             display: flex;
             position: relative;
+            
         }
 
         .overlay {

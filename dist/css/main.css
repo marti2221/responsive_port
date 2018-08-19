@@ -187,8 +187,10 @@ main {
     justify-content: center;
     flex-flow: wrap;
     margin-top: 10px; }
+    #work .projects img {
+      max-width: 500px; }
     #work .projects .item {
-      margin: 5px; }
+      margin: 10px; }
     #work .projects .img-wrapper {
       flex: 1;
       display: flex;
