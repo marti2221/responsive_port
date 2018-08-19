@@ -14,7 +14,7 @@ body {
     color: set-text-color($primary-color); 
     height: 100%; 
     margin: 0; 
-    font-family: "Roboto", "Geneva", "Verdana"; 
+    font-family: "Roboto Condensed", "Geneva", "Verdana"; 
 
      
 }
@@ -24,7 +24,7 @@ h1, h2, h3 {
     font-weight: 300;
     
     &.lg-heading {
-        font-size: 4rem; 
+        font-size: 4.5rem; 
         font-weight: 700;
         margin-bottom: 1rem; 
         padding-bottom: 0.2rem;
@@ -32,9 +32,9 @@ h1, h2, h3 {
 
     }
     &.sm-heading {
-        font-family: "Archivo Narrow", "Verdana";
+        font-family: "Roboto Condensed", "Verdana";
         font-size: 1.5rem;
-        letter-spacing: .1rem;
+        letter-spacing: .2rem;
         padding-bottom: 2px;
     }
 }
