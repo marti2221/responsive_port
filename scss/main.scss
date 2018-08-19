@@ -14,13 +14,13 @@ body {
     color: set-text-color($primary-color); 
     height: 100%; 
     margin: 0; 
-    font-family: "Raleway", "Geneva", "Verdana"; 
-    font-weight: 300;
+    font-family: "Roboto", "Geneva", "Verdana"; 
     line-height: 1.5;
+     
 }
 
 h1, h2, h3 {
-    margin: 0; 
+    margin: 0;
     font-weight: 300;
     
     &.lg-heading {
@@ -28,10 +28,12 @@ h1, h2, h3 {
         font-weight: 700;
         margin-bottom: 1rem; 
         padding: 0.2rem 1rem;
-        letter-spacing: .1rem;
+
     }
     &.sm-heading {
-        font-size: 2.3rem;
+        font-family: "Archivo Narrow", "Verdana";
+        font-size: 1.8rem;
+        letter-spacing: .1rem;
     }
 }
 
@@ -163,30 +165,11 @@ main {
 
 
 // contact page 
-.boxes {
+.main-info {
     display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-around; 
+    flex-direction: column; 
+    justify-content: center; 
     align-items: center; 
-    margin-top: 1rem;
-    
-    div {
-        font-size: 2rem; 
-        border: 3px #fff solid; 
-        padding: 1.5rem 2.5rem;
-        margin-bottom: 3rem; 
-        @include easeOut; 
-        
-        &:hover {
-            padding: 0.5rem 1.5rem; 
-            background: $secondary-color;
-            color: set-text-color($secondary-color);
-            
-            span {
-                color: set-text-color($secondary-color); 
-            }
-        }
-    }
 }
 
 
