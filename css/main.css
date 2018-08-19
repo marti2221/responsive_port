@@ -98,8 +98,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Raleway", "Geneva", "Verdana";
-  font-weight: 300;
+  font-family: "Roboto", "Geneva", "Verdana";
   line-height: 1.5; }
 
 h1, h2, h3 {
@@ -109,10 +108,11 @@ h1, h2, h3 {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    padding: 0.2rem 1rem;
-    letter-spacing: .1rem; }
+    padding: 0.2rem 1rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    font-size: 2.3rem; }
+    font-family: "Archivo Narrow", "Verdana";
+    font-size: 1.8rem;
+    letter-spacing: .1rem; }
 
 a {
   color: white;
@@ -194,24 +194,11 @@ main {
       background-color: red;
       transition: all 0.5s ease-out; }
 
-.boxes {
+.main-info {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 1rem; }
-  .boxes div {
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #ff34d0;
-      color: #000; }
-      .boxes div:hover span {
-        color: #000; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
