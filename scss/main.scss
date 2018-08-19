@@ -15,7 +15,7 @@ body {
     height: 100%; 
     margin: 0; 
     font-family: "Roboto", "Geneva", "Verdana"; 
-    line-height: 1.5;
+
      
 }
 
@@ -27,13 +27,15 @@ h1, h2, h3 {
         font-size: 4rem; 
         font-weight: 700;
         margin-bottom: 1rem; 
-        padding: 0.2rem 1rem;
+        padding-bottom: 0.2rem;
+     
 
     }
     &.sm-heading {
         font-family: "Archivo Narrow", "Verdana";
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         letter-spacing: .1rem;
+        padding-bottom: 2px;
     }
 }
 
