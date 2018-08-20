@@ -58,23 +58,11 @@ main {
     padding: 4rem; 
     min-height: calc(100vh - 60px);  
     
-    .icons {
-        margin-top: 2rem; 
-        
-        a {
-            padding: 1rem; 
-            
-            &:hover {
-                color: $secondary-color; 
-                @include easeOut;  
-            }
-        }
-    }
+    
     
     &#home {
         height: 100vh; 
         width: 100%; 
-        overflow: hidden; 
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -90,6 +78,19 @@ main {
             height: 2px; 
             color: white; 
             background-color: white; 
+        }
+        
+        .icons {
+            margin-top: 2rem; 
+
+            a {
+                padding: 1rem; 
+
+                &:hover {
+                    color: $secondary-color; 
+                    @include easeOut;  
+                }
+            }
         }
     }
 }
