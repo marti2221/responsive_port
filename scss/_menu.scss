@@ -11,13 +11,16 @@
         width: 28px; 
         height: 3px; 
         margin: 0 0 5px 0; 
-        background: set-text-color($primary-color); 
+        border-radius: 2px;
+        background-color: white;
         @include easeOut; 
     }
     
     // rotate into x with menu lines 
     &.close {
         transform: rotate(180deg);
+        color: blue; 
+        
         
         .btn-line {
             // line 1: rotate
@@ -61,7 +64,7 @@
     &-nav {
         margin: 0; 
         padding: 0; 
-        background: $purple;
+        background: $primary-color;
         opacity: 0.9; 
         list-style: none; 
         // -100 starts at top
@@ -90,7 +93,7 @@
             width: 225px; 
             height: 225px; 
             background: url(../img/portrait.jpg);
-            border: solid 3px $purple;
+            border: solid 3px $secondary-color;
             border-radius: 50%; 
         }
     }
@@ -113,7 +116,6 @@
         display: inline-block; 
         position: relative; 
         font-size: 30px; 
-        text-transform: uppercase; 
         padding: 1rem 0; 
         font-weight: 300; 
         color: set-text-color($primary-color); 

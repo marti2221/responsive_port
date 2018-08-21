@@ -1,42 +1,61 @@
 // widescreen 
 @include mediaXl {
-    .projects {
-        grid-template-columns: repeat(4, 1fr);
-    }
+    
 }
 
 // desktop/laptop
 @include mediaLg {
-    .projects {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    
 }
 
 // tablet
 @include mediaMd {
+    
+    header {
+        
+        .menu-btn {
+            
+            .btn-line {
+                background-color: $secondary-color;
+            }
+        }
+    }
+    
     main {
         align-items: center; 
         text-align: center;
 
     }
     
-    main#home .icons  a{
-        padding: 0.8rem;
+    main#home {
+        .icons  a{
+            padding: 0.8rem;
+        }
+        
+        hr {
+            height: 1px;
+            width: 75px;
+        }
+        
+        .heading-container h2 {
+            top: -50px;  
+        }
     }
     
-    main#home hr {
-        height: 1px;
-    }
+    
+    
     
     h1.lg-heading {
         line-height: 1; 
         margin-bottom: 1rem; 
-        font-size: 3.5rem;
+        font-size: 2.6rem;
     }
     
     h2.sm-heading {
-        font-size: 1.2rem;
+        font-size: 3.4rem;
     }
+    
+    
     
     
     
@@ -68,25 +87,144 @@
         }
     }
     
+    main#work {
+        
+        .projects {
+            
+            .project-col {
+                flex: 100%; 
+                max-width: 100%; 
+                
+            }
+        }
+        
+    }
+    
+    main#about {
+        
+        .about-info {
+            flex-direction: column;
+            
+            .bio-img-container {
+                margin: 0 0 40px 0; 
+            }
+            
+            .bio {
+                padding-right: 0;
+                
+                .bio-text {
+                    font-weight: 400; 
+                    margin-top: 10px;  
+                }
+            }
+        }
+        h2.sub-heading {
+            font-size: 2.5rem;
+            margin-bottom: -20px;
+        }
+        
+        .icons-row {
+            margin: 50px 0; 
+        }
+        
+        .fa-6x {
+            font-size: 50px;
+        }
+        
+    }
+    
+    main.main-info {
+        
+        h1.lg-heading {
+            margin-bottom: 0;
+            letter-spacing: -0.5px;
+        }
+        
+        h2.sub-heading {
+            font-size: 2.5rem;
+        }
+        
+        a, p {
+            font-size: .9rem;
+            margin: 3px 0;
+
+        }
+    }
+    
 }
 
 // smart phone
 @include mediaSm {
     
+    main {
+        padding: 1rem;
+    }
+    
     h1.lg-heading {
-        font-size: 2.5rem;
+        font-size: 1.9rem;
     }
     
     h2.sm-heading {
-        font-size: 0.9rem;
+        font-size: 2.4rem;
     }
     
-    .fa-2x {
-        font-size: 25px;
+    main#home {
+        
+        hr {
+            width: 50px;
+            margin: 0;
+        }
+        
+        .icons {
+            margin-top: 20px; 
+        }
+        
+        .heading-container h2.sm-heading {
+            top: -35px;
+        }
+        
+        .fa-2x {
+            font-size: 25px;
+        }
     }
     
     
-    .projects {
-        grid-template-columns: 1fr; 
+    main#about {
+        h2.sub-heading {
+            font-size: 2rem; 
+        }
     }
+    
+    
+    main#work {
+        
+        .projects {
+            
+            .project-col {
+   
+                .overlay h2.proj-num {
+                    width: 75px;
+                    height: 75px;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        
+    }
+    
+    
+    main.main-info {
+        
+        h2.sub-heading {
+            font-size: 2rem; 
+        }
+        
+        a, p {
+            font-size: .8rem; 
+            margin: 2px 0; 
+        }
+    }
+    
+    
+
 }
