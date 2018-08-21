@@ -4,15 +4,17 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.3s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
-    transition: all 0.5s ease-out; }
+    border-radius: 2px;
+    background-color: white;
+    transition: all 0.3s ease-out; }
   .menu-btn.close {
-    transform: rotate(180deg); }
+    transform: rotate(180deg);
+    color: blue; }
     .menu-btn.close .btn-line:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px); }
     .menu-btn.close .btn-line:nth-child(2) {
@@ -39,44 +41,43 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #6534ff;
+    background: #22262f;
     opacity: 0.9;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.3s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: white;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.3s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
       width: 225px;
       height: 225px;
       background: url(../img/portrait.jpg);
-      border: solid 3px #6534ff;
+      border: solid 3px #ff5050;
       border-radius: 50%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.3s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #ff34d0; }
+      color: #ff5050; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
     font-size: 30px;
-    text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-    transition: all 0.5s ease-out; }
+    transition: all 0.3s ease-out; }
     .menu .nav-link:hover {
-      color: #ff34d0; }
+      color: #ff5050; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -94,25 +95,29 @@
   box-sizing: border-box; }
 
 body {
-  background: linear-gradient(#6534ff, #4822b7 65%, #592ce0);
+  /*
+    background: linear-gradient(#6534ff, #4822b7 65%, #592ce0);
+    */
+  background-color: #22262f;
   color: #fff;
-  height: 100%;
+  height: 100vh;
   margin: 0;
-  font-family: "Roboto Condensed", "Geneva", "Verdana"; }
+  font-family: "Montserrat"; }
 
 h1, h2, h3 {
-  margin: 0;
-  font-weight: 300; }
+  margin: 0; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    padding-bottom: 0.2rem; }
+    font-family: "Montserrat", "Verdana";
+    font-size: 4rem;
+    letter-spacing: -2px; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    font-family: "Roboto Condensed", "Verdana";
-    font-size: 1.5rem;
-    letter-spacing: .2rem;
-    padding-bottom: 5px; }
+    font-family: "Dancing Script";
+    font-size: 5.3rem;
+    color: #ff5050; }
+  h1.sub-heading, h2.sub-heading, h3.sub-heading {
+    font-family: "Dancing Script";
+    font-size: 3.5rem;
+    color: #ff5050; }
 
 a {
   color: white;
@@ -124,91 +129,130 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #ff34d0; }
+  color: #ff5050; }
 
 main {
-  padding: 4rem;
+  padding: 4rem 5rem;
   min-height: calc(100vh - 60px); }
   main#home {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    main#home h2 {
-      margin-top: 10vh; }
+    main#home .heading-container {
+      display: block;
+      position: relative; }
+      main#home .heading-container h2 {
+        position: absolute;
+        top: -68px;
+        left: 2px;
+        margin-bottom: 10px; }
     main#home hr {
-      width: 50px;
+      width: 100px;
       border: none;
       height: 2px;
-      color: white;
-      background-color: white; }
+      background-color: #ff5050; }
     main#home .icons {
-      margin-top: 2rem; }
+      margin-top: 30px; }
       main#home .icons a {
         padding: 1rem; }
         main#home .icons a:hover {
-          color: #ff34d0;
-          transition: all 0.5s ease-out; }
+          color: #ff5050;
+          transition: all 0.3s ease-out; }
 
-#about {
+main#about {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  #about .about-info {
+  main#about h1.lg-heading {
+    margin: 60px 0; }
+  main#about h2.sub-heading {
+    margin: 100px 0 -50px 0; }
+  main#about .about-info {
     display: flex;
-    width: 850px;
-    margin-bottom: 50px; }
-    #about .about-info .bio {
-      margin-left: 7%; }
-    #about .about-info .bio-img {
-      margin: auto;
-      border: #ff34d0 3px solid;
-      border-radius: 50%; }
-  #about .icons {
-    width: 500px; }
-  #about .icons-row {
+    margin: 50px;
+    align-items: center;
+    margin: 0 15%; }
+    main#about .about-info .bio-img-container {
+      margin-right: 60px;
+      flex: 0 1 200px; }
+      main#about .about-info .bio-img-container .bio-img {
+        border: #ff5050 3px solid;
+        border-radius: 50%;
+        float: right;
+        height: 200px;
+        width: 200px; }
+    main#about .about-info .bio {
+      flex: 2 3 auto;
+      padding-right: 20px; }
+      main#about .about-info .bio .bio-text-heading {
+        color: #ff5050; }
+      main#about .about-info .bio .bio-text {
+        line-height: 27px;
+        font-size: 1.1rem;
+        margin-top: 5px; }
+  main#about .icons {
+    width: 65%; }
+  main#about .icons-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px; }
+    margin: 80px 0; }
 
 #work {
   display: flex;
   flex-direction: column;
   align-items: center; }
   #work .lg-heading {
-    margin: 20px 0; }
+    margin: 60px 0 20px 0;
+    letter-spacing: 0px; }
   #work .projects {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap;
-    margin-top: 10px; }
-    #work .projects img {
-      max-width: 500px; }
+    flex-wrap: wrap; }
+    #work .projects .project-col {
+      flex: 50%;
+      max-width: 50%; }
     #work .projects .item {
       margin: 10px; }
+      #work .projects .item img {
+        width: 100%;
+        height: 50%; }
     #work .projects .img-wrapper {
-      flex: 1;
       display: flex;
-      position: relative; }
+      position: relative;
+      overflow: auto; }
     #work .projects .overlay {
       position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 100%;
       width: 100%;
-      z-index: 0; }
+      z-index: 0;
+      background-color: rgba(34, 38, 47, 0.9); }
       #work .projects .overlay:hover {
-        border: 15px solid black;
-        background-color: red;
-        transition: all 0.5s ease-out; }
+        opacity: 0;
+        transition: all 0.3s ease-out; }
+      #work .projects .overlay .proj-num {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid #ff5050;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        font-size: 4rem; }
 
 .main-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .main-info a, .main-info p {
+    font-weight: 400;
+    margin: 3px 0; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -216,7 +260,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #ff34d0;
+    background: #ff5050;
     color: #000; }
 
 .btn-dark {
@@ -224,38 +268,35 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #9aa3b6;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #0d0e11;
   color: #fff;
   height: 60px; }
 
-@media screen and (max-width: 1171px) {
-  .projects {
-    grid-template-columns: repeat(4, 1fr); } }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
-    grid-template-columns: repeat(3, 1fr); } }
-
 @media screen and (max-width: 768px) {
+  header .menu-btn .btn-line {
+    background-color: #ff5050; }
   main {
     align-items: center;
     text-align: center; }
   main#home .icons a {
     padding: 0.8rem; }
   main#home hr {
-    height: 1px; }
+    height: 1px;
+    width: 75px; }
+  main#home .heading-container h2 {
+    top: -50px; }
   h1.lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
-    font-size: 3.5rem; }
+    font-size: 2.6rem; }
   h2.sm-heading {
-    font-size: 1.2rem; }
+    font-size: 3.4rem; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
@@ -273,14 +314,59 @@ main {
       background: url("../img/portrait.jpg");
       width: 135px;
       height: 135px;
-      background-position: center; } }
+      background-position: center; }
+  main#work .projects .project-col {
+    flex: 100%;
+    max-width: 100%; }
+  main#about .about-info {
+    flex-direction: column; }
+    main#about .about-info .bio-img-container {
+      margin: 0 0 40px 0; }
+    main#about .about-info .bio {
+      padding-right: 0; }
+      main#about .about-info .bio .bio-text {
+        font-weight: 400;
+        margin-top: 10px; }
+  main#about h2.sub-heading {
+    font-size: 2.5rem;
+    margin-bottom: -20px; }
+  main#about .icons-row {
+    margin: 50px 0; }
+  main#about .fa-6x {
+    font-size: 50px; }
+  main.main-info h1.lg-heading {
+    margin-bottom: 0;
+    letter-spacing: -0.5px; }
+  main.main-info h2.sub-heading {
+    font-size: 2.5rem; }
+  main.main-info a, main.main-info p {
+    font-size: .9rem;
+    margin: 3px 0; } }
 
 @media screen and (max-width: 500px) {
+  main {
+    padding: 1rem; }
   h1.lg-heading {
-    font-size: 2.5rem; }
+    font-size: 1.9rem; }
   h2.sm-heading {
-    font-size: 0.9rem; }
-  .fa-2x {
+    font-size: 2.4rem; }
+  main#home hr {
+    width: 50px;
+    margin: 0; }
+  main#home .icons {
+    margin-top: 20px; }
+  main#home .heading-container h2.sm-heading {
+    top: -35px; }
+  main#home .fa-2x {
     font-size: 25px; }
-  .projects {
-    grid-template-columns: 1fr; } }
+  main#about h2.sub-heading {
+    font-size: 2rem; }
+  main#work .projects .project-col .overlay h2.proj-num {
+    width: 75px;
+    height: 75px;
+    font-size: 2.5rem; }
+  main.main-info h2.sub-heading {
+    font-size: 2rem; }
+  main.main-info a, main.main-info p {
+    font-size: .8rem;
+    margin: 2px 0; } }
