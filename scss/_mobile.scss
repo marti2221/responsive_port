@@ -169,6 +169,22 @@
 		}
         
     }
+	
+	main#contact {
+		
+		.container {
+			width: 100%; 
+			
+			.col {
+				width: 100%; 
+				
+				&:nth-child(2) {
+					float: none; 
+				}
+			}
+		}
+		
+	}
     
 
     
@@ -254,6 +270,8 @@
             margin: 2px 0; 
         }
     }
+	
+	
     
 
     

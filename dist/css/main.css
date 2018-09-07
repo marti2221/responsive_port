@@ -432,7 +432,13 @@ main {
     margin: 20px; }
     main#about .container .col {
       margin: 15px auto;
-      width: 100%; } }
+      width: 100%; }
+  main#contact .container {
+    width: 100%; }
+    main#contact .container .col {
+      width: 100%; }
+      main#contact .container .col:nth-child(2) {
+        float: none; } }
 
 @media screen and (max-width: 500px) {
   main {
