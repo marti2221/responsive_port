@@ -7,7 +7,7 @@
     cursor: pointer; 
     @include easeOut;
     
-    .btn-line {
+    &-line {
         width: 28px; 
         height: 3px; 
         margin: 0 0 5px 0; 
@@ -22,7 +22,7 @@
         color: blue; 
         
         
-        .btn-line {
+        .menu-btn-line {
             // line 1: rotate
             &:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px);
@@ -71,6 +71,35 @@
         transform: translate3d(0, -100%, 0);
         @include easeOut;
         
+        &-item {
+            transform: translate3d(600px, 0, 0);
+            @include easeOut;
+
+            &.show {
+                // slide in from right
+                transform: translate3d(0, 0, 0);   
+            }
+
+            &.current > a {
+                color: $secondary-color; 
+            }
+            
+            a {
+                display: inline-block; 
+                position: relative;  
+                padding: 1.5rem 0; 
+                font-weight: 300;
+                font-size: 24px;
+                color: set-text-color($primary-color); 
+                text-decoration: none; 
+                @include easeOut;
+        
+                &:hover {
+                    color: $secondary-color; 
+                }
+            }
+        }
+
         &.show {
             // slide in from top
             transform: translate3d(0, 0, 0);   
@@ -89,43 +118,9 @@
             transform: translate3d(0, 0, 0);   
         }
         
-        .portrait {
-            width: 225px; 
-            height: 225px; 
-            background: url(../img/portrait.jpg);
-            border: solid 3px $secondary-color;
-            border-radius: 50%; 
-        }
+        
     }
     
-    .nav-item {
-        transform: translate3d(600px, 0, 0);
-        @include easeOut;
-        
-        &.show {
-            // slide in from right
-            transform: translate3d(0, 0, 0);   
-        }
-        
-        &.current > a {
-            color: $secondary-color; 
-        }
-    }
-    
-    .nav-link {
-        display: inline-block; 
-        position: relative;  
-        padding: 1.5rem 0; 
-        font-weight: 300;
-        font-size: 24px;
-        color: set-text-color($primary-color); 
-        text-decoration: none; 
-        @include easeOut;
-        
-        &:hover {
-            color: $secondary-color; 
-        }
-    }
 }
 
 // delay each nav item slide by 0.1s

@@ -5,48 +5,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Bad+Script|Cookie|Courgette|Dancing+Script:700|Lobster|Lobster+Two:400,700i|Mark+Script|Playball|Volkhov:400i,700i|Yellowtail|Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Montserrat:100,400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <title>My Portfolio</title>
     </head>
     <body>
         <header>
             <div class="menu-btn">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
+                <div class="menu-btn-line"></div>
+                <div class="menu-btn-line"></div>
+                <div class="menu-btn-line"></div>
             </div>
             <nav class="menu">
                 <div class="menu-branding">
-                    <div class="portrait"></div>
+                    <div class="menu-branding-port"></div>
                 </div>
                 <ul class="menu-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                    <li class="menu-nav-item current">
+                        <a href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">About Me</a>
+                    <li class="menu-nav-item">
+                        <a href="about.html">About Me</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="work.html" class="nav-link">My Work</a>
+                    <li class="menu-nav-item">
+                        <a href="work.html">My Work</a>
                     </li>
-                    <li class="nav-item current">
-                        <a href="contact.html" class="nav-link">Contact</a>
+                    <li class="menu-nav-item">
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main class="main-info">
-            <h1 class="lg-heading">LET'S GET IN TOUCH</h1>
-            <h2 class="sub-heading">Travis A Martin</h2>  
-            <a class="email">martiwebdev@gmail.com</a>
-            <p class="phone-num">989-385-4551</p>
+        <main id="contact">
+            <div class="heading-container">
+                <h2 class="heading-sub">Travis A Martin</h2>
+                <h1 class="heading-prim">LET'S GET IN TOUCH</h1>
+            </div>
+            <h3 class="contact-phone">989-385-4551</h3>
+            <div class="container">
+                <div class="col">
+                    <div id="map"></div>
+                </div>
+                <div class="col">
+                    <form class="contact-form" action="#!">
+                        <input type="text" id="form-name" name="name" placeholder="Name">
+                        <input type="text" id="form-email" name="email" placeholder="Email">
+                        <input type="text" id="form-subject" name="subject" placeholder="Subject">
+                        <textarea id="message" name="message" placeholder="Your message..."></textarea>
+                        <button class="btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </main>
         
         <footer id="main-footer">
             Copyright &copy; 2018
         </footer>
-        
         <script src="js/main.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRUz0EkUg6pt5oxuoCcaq0YuCHMGtNO8Y&callback=initMap"></script>
     </body>
 </html>

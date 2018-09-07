@@ -3,10 +3,13 @@
     
 }
 
-// desktop/laptop
-@include mediaLg {
-    
-}
+
+
+
+
+
+
+
 
 // tablet
 @include mediaMd {
@@ -15,7 +18,7 @@
         
         .menu-btn {
             
-            .btn-line {
+            &-line {
                 background-color: $secondary-color;
             }
         }
@@ -24,41 +27,48 @@
     main {
         align-items: center; 
         text-align: center;
-
+		padding-left: 2rem; 
+		padding-right: 2rem; 
     }
     
-    main#home {
-        .icons  a{
-            padding: 0.8rem;
-        }
-        
-        hr {
-            height: 1px;
-            width: 75px;
-        }
-        
-        .heading-container h2 {
-            top: -50px;  
-        }
-    }
+ 
     
     
     
-    
-    h1.lg-heading {
+    h1.home-heading-prim {
         line-height: 1; 
         margin-bottom: 1rem; 
         font-size: 2.6rem;
     }
     
-    h2.sm-heading {
+    h2.home-heading-sub {
         font-size: 3.4rem;
     }
+	
+	
     
     
-    
-    
-    
+	.icon-sm {
+		width: 2.2rem;
+		height: 2.2rem; 
+		font-size: 18px; 
+	}
+	
+	.icon-lg {
+		width: 4rem; 
+		height: 4rem; 
+		font-size: 24px; 
+	}
+	
+	.portrait-lg {
+		width: 175px; 
+		height: 175px; 
+		background: url(../img/portrait.jpg);
+	}
+
+	
+	
+	
     ul.menu-nav, div.menu-branding {
         float: none; 
         width: 100%; 
@@ -88,69 +98,79 @@
         }
     }
     
-    main#work {
+	
+	
+	
+
+	main#home {
+		.icons  a{
+			padding: 0.8rem;
+		}
+
+		hr {
+			height: 1px;
+			width: 75px;
+			margin: 10px
+		}
+
+		.heading h2 {
+			top: -50px; 
+		}
+	}
+
+	
+	
+	
+	
+	
+    #work {
         
-        .projects {
-            
-            .project-col {
-                flex: 100%; 
-                max-width: 100%; 
-                
-            }
-        }
-        
+		.slider {
+			
+			&-section {
+				
+				.project {
+					display: block; 
+					text-align: center;
+
+				}
+			}
+		}
     }
+	
+	
+	
+	
     
     main#about {
         
-        .about-info {
-            flex-direction: column;
+        .my-info {
+            display: block;
             
-            .bio-img-container {
+            .img-container {
                 margin: 0 0 40px 0; 
             }
             
             .bio {
-                padding-right: 0;
-                
-                .bio-text {
-                    font-weight: 400; 
-                    margin-top: 10px;  
-                }
+				margin-top: 20px; 
+				padding: 0 20px; 
             }
         }
-        h2.sub-heading {
-            font-size: 2.5rem;
-            margin-bottom: -20px;
-        }
-        
-        .icons-row {
-            margin: 50px 0; 
-        }
-        
-        .fa-6x {
-            font-size: 50px;
-        }
+		
+		.container {
+			display: block; 
+			text-align: center;
+			margin: 20px; 
+			
+			.col {
+				margin: 15px auto; 
+				width: 100%; 
+			}
+		}
         
     }
     
-    main.main-info {
-        
-        h1.lg-heading {
-            margin-bottom: 0;
-            letter-spacing: -0.5px;
-        }
-        
-        h2.sub-heading {
-            font-size: 2.5rem;
-        }
-        
-        a, p {
-            font-size: .9rem;
-            margin: 3px 0;
 
-        }
-    }
     
 }
 
@@ -158,22 +178,31 @@
 @include mediaSm {
     
     main {
-        padding: 1rem;
+        padding: .5rem;
     }
     
-    h1.lg-heading {
-        font-size: 1.9rem;
+    h1.home-heading-prim {
+        line-height: 1; 
+        margin-bottom: 1rem; 
+        font-size: 2rem;
     }
     
-    h2.sm-heading {
-        font-size: 2.4rem;
+    h2.home-heading-sub {
+        font-size: 2.6rem;
     }
     
     main#home {
+		
+		.heading {
+			
+			h2 {
+				top: -38px; 
+			}
+		}
         
         hr {
             width: 50px;
-            margin: 0;
+            margin: 3px auto;
         }
         
         .icons {
