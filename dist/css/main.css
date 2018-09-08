@@ -404,7 +404,7 @@ main {
     height: 30vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/portrait_sm.jpg");
       width: 135px;
       height: 135px;
       background-position: center; }
@@ -416,7 +416,7 @@ main {
     margin: 10px; }
   main#home .heading h2 {
     top: -50px; }
-  #work .slider-section .project {
+  main#work .slider-section .project {
     display: block;
     text-align: center; }
   main#about .my-info {
@@ -436,9 +436,8 @@ main {
   main#contact .container {
     width: 100%; }
     main#contact .container .col {
-      width: 100%; }
-      main#contact .container .col:nth-child(2) {
-        float: none; } }
+      width: 100%;
+      float: none; } }
 
 @media screen and (max-width: 500px) {
   main {

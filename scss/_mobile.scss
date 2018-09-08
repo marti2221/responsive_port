@@ -91,7 +91,7 @@
         transform: translate3d(100%, 0, 0); 
         
         .portrait {
-            background: url("../img/portrait_small.jpg");
+            background: url("../img/portrait_sm.jpg");
             width: 135px;
             height: 135px; 
             background-position: center;
@@ -123,7 +123,7 @@
 	
 	
 	
-    #work {
+    main#work {
         
 		.slider {
 			
@@ -177,10 +177,7 @@
 			
 			.col {
 				width: 100%; 
-				
-				&:nth-child(2) {
-					float: none; 
-				}
+				float: none; 
 			}
 		}
 		
