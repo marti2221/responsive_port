@@ -160,7 +160,7 @@ main {
     display: flex;
     flex-direction: column; 
     align-items: center;
-	color: lightgrey; 
+	color: $grey; 
 	font-weight: 100; 
     
     h1 {
@@ -187,7 +187,6 @@ main {
             flex-direction: column;
             justify-content: center;
             flex: 2; 
-            color: lightgrey; 
             
             &-heading {
                 color: $third-color; 
@@ -506,14 +505,23 @@ main {
 	&-sm {
 		height: 2.8rem; 
 		width: 2.8rem;
-		font-size: 20px;
+		font-size: 1.4rem;
+		
+		&:hover {
+			color: $primary-color; 
+			background-color: $third-color; 
+			transform: scale(1.2); 
+			font-size: 1.6rem; 
+		}
 	}
 	
 	&-lg {
 		height: 4.5rem; 
 		width: 4.5rem;
-		font-size: 28px; 
+		font-size: 1.75rem; 
 	}
+	
+	
 }
 
 

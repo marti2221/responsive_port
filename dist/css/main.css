@@ -166,7 +166,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: lightgrey;
+  color: #e1e1e1;
   font-weight: 100; }
   #about h1 {
     color: white; }
@@ -183,8 +183,7 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      flex: 2;
-      color: lightgrey; }
+      flex: 2; }
       #about .my-info .bio-heading {
         color: #84ffff;
         font-size: 1.3rem; }
@@ -348,11 +347,16 @@ main {
   .icon-sm {
     height: 2.8rem;
     width: 2.8rem;
-    font-size: 20px; }
+    font-size: 1.4rem; }
+    .icon-sm:hover {
+      color: #081c18;
+      background-color: #84ffff;
+      transform: scale(1.2);
+      font-size: 1.6rem; }
   .icon-lg {
     height: 4.5rem;
     width: 4.5rem;
-    font-size: 28px; }
+    font-size: 1.75rem; }
 
 .inline-list {
   display: inline-block; }
@@ -441,7 +445,7 @@ main {
 
 @media screen and (max-width: 500px) {
   main {
-    padding: .5rem; }
+    padding: 5rem .5rem; }
   h1.home-heading-prim {
     line-height: 1;
     margin-bottom: 1rem;

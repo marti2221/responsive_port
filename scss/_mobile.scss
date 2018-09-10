@@ -6,11 +6,6 @@
 
 
 
-
-
-
-
-
 // tablet
 @include mediaMd {
     
@@ -141,6 +136,7 @@
 	
 	
 	
+	
     
     main#about {
         
@@ -179,19 +175,16 @@
 				width: 100%; 
 				float: none; 
 			}
-		}
-		
+		}		
 	}
-    
-
-    
 }
+
 
 // smart phone
 @include mediaSm {
     
     main {
-        padding: .5rem;
+        padding: 5rem .5rem;
     }
     
     h1.home-heading-prim {
@@ -267,11 +260,4 @@
             margin: 2px 0; 
         }
     }
-	
-	
-    
-
-    
-    
-
 }
