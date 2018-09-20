@@ -124,19 +124,21 @@ main {
         border: none; 
         height: 2px; 
         background-color: $secondary-color; 
-        margin: 20px 0; 
+        margin: 2rem 0; 
 
     }
 
     .icons {
-        margin-top: 15px; 
+		
+		.icon {
+			display: inline-block; 
+			margin: .9rem .7rem 0 .7rem;
+		}
 
-        a {
-            padding: 1rem; 
-            color: $third-color; 
-
+		a { 
+			color: lighten($primary-color, 30%); 
+			
             &:hover {
-                color: $secondary-color; 
                 @include easeOut;  
             }
         }
@@ -494,34 +496,50 @@ main {
 // icon styles
 .icon {
 	border-radius: 50%; 
-	border: 2px solid $third-color; 
+	box-shadow: 1px 1px 5px darken($primary-color, 90%);  
+	line-height: 55px; 
 	background: none;
-	display: table-cell;
-	vertical-align: middle;
 	text-align: center; 
-	color: $third-color;
+	cursor: pointer; 
+	
 	 
+	i {
+		line-height: 1.5; 
+		display: inline-block; 
+		vertical-align: middle;
+		
+	}
 	
 	&-sm {
-		height: 2.8rem; 
-		width: 2.8rem;
-		font-size: 1.4rem;
+		width: 56px;
+		height: 56px;  
+		font-size: 1.5rem;
+		
 		
 		&:hover {
-			color: $primary-color; 
-			background-color: $third-color; 
-			transform: scale(1.2); 
-			font-size: 1.6rem; 
+			color: $secondary-color; 
+			font-size: 1.55; 
+			transform: scale(1.05); 
+			transform-origin: top center; 
+			box-shadow: 2px 2px 5px darken($primary-color, 90%);
+			transition: all 75ms; 
+		}
+		
+		&:active {
+			box-shadow: 1px 1px 5px $secondary-color;
+			transform: scale(1);
+			transition: all 75ms; 
 		}
 	}
 	
 	&-lg {
+		line-height: 4.5rem; 
 		height: 4.5rem; 
 		width: 4.5rem;
 		font-size: 1.75rem; 
 	}
 	
-	
+
 }
 
 
@@ -530,6 +548,12 @@ main {
 .inline-list {
 	display: inline-block; 
 }
+
+
+
+
+
+
 
 
 

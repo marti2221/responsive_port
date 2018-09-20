@@ -41,7 +41,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #081c18;
+    background: #191923;
     opacity: 0.9;
     list-style: none;
     transform: translate3d(0, -100%, 0);
@@ -89,7 +89,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #081c18;
+  background-color: #191923;
   color: #fff;
   height: 100vh;
   margin: 0;
@@ -152,15 +152,14 @@ main {
     border: none;
     height: 2px;
     background-color: #ff5050;
-    margin: 20px 0; }
-  #home .icons {
-    margin-top: 15px; }
-    #home .icons a {
-      padding: 1rem;
-      color: #84ffff; }
-      #home .icons a:hover {
-        color: #ff5050;
-        transition: all 0.3s ease-out; }
+    margin: 2rem 0; }
+  #home .icons .icon {
+    display: inline-block;
+    margin: .9rem .7rem 0 .7rem; }
+  #home .icons a {
+    color: #59597c; }
+    #home .icons a:hover {
+      transition: all 0.3s ease-out; }
 
 #about {
   display: flex;
@@ -289,7 +288,7 @@ main {
         color: #ff5050;
         font-weight: 400; }
         #contact .container .col button:hover {
-          color: #081c18; }
+          color: #191923; }
       #contact .container .col textarea {
         height: 100px; }
   #contact .col:nth-child(2) {
@@ -299,7 +298,7 @@ main {
   display: block;
   position: relative;
   cursor: pointer;
-  color: #081c18;
+  color: #191923;
   border: 2px solid #ff5050;
   padding: 0.5rem 0.75rem;
   margin: 2rem 0;
@@ -309,7 +308,7 @@ main {
   font-size: 1rem;
   font-weight: 700; }
   .btn:hover {
-    color: #081c18; }
+    color: #191923; }
   .btn:after {
     content: "";
     position: absolute;
@@ -338,22 +337,32 @@ main {
 
 .icon {
   border-radius: 50%;
-  border: 2px solid #84ffff;
+  box-shadow: 1px 1px 5px black;
+  line-height: 55px;
   background: none;
-  display: table-cell;
-  vertical-align: middle;
   text-align: center;
-  color: #84ffff; }
+  cursor: pointer; }
+  .icon i {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle; }
   .icon-sm {
-    height: 2.8rem;
-    width: 2.8rem;
-    font-size: 1.4rem; }
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem; }
     .icon-sm:hover {
-      color: #081c18;
-      background-color: #84ffff;
-      transform: scale(1.2);
-      font-size: 1.6rem; }
+      color: #ff5050;
+      font-size: 1.55;
+      transform: scale(1.05);
+      transform-origin: top center;
+      box-shadow: 2px 2px 5px black;
+      transition: all 75ms; }
+    .icon-sm:active {
+      box-shadow: 1px 1px 5px #ff5050;
+      transform: scale(1);
+      transition: all 75ms; }
   .icon-lg {
+    line-height: 4.5rem;
     height: 4.5rem;
     width: 4.5rem;
     font-size: 1.75rem; }
@@ -364,7 +373,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: black;
+  background: #040405;
   color: #fff;
   height: 60px; }
 
@@ -382,14 +391,6 @@ main {
     font-size: 2.6rem; }
   h2.home-heading-sub {
     font-size: 3.4rem; }
-  .icon-sm {
-    width: 2.2rem;
-    height: 2.2rem;
-    font-size: 18px; }
-  .icon-lg {
-    width: 4rem;
-    height: 4rem;
-    font-size: 24px; }
   .portrait-lg {
     width: 175px;
     height: 175px;
@@ -423,6 +424,10 @@ main {
   main#work .slider-section .project {
     display: block;
     text-align: center; }
+    main#work .slider-section .project .project-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
   main#about .my-info {
     display: block; }
     main#about .my-info .img-container {
